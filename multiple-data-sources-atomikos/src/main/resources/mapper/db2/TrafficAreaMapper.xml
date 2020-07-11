@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zjx.multiple.data.sources.atomikos.mapper.db2.TrafficAreaMapper">
+  <resultMap id="BaseResultMap" type="com.zjx.multiple.data.sources.atomikos.domain.db2.TrafficArea">
+    <!--@mbg.generated generated on Mon May 18 19:47:10 CST 2020.-->
+    <!--@Table traffic_area-->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="area" jdbcType="VARCHAR" property="area" />
+    <result column="lon" jdbcType="VARCHAR" property="lon" />
+    <result column="lat" jdbcType="VARCHAR" property="lat" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="ind" jdbcType="INTEGER" property="ind" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated generated on Mon May 18 19:47:10 CST 2020.-->
+    id, area, lon, lat, `type`, ind
+  </sql>
+
+  <select id="findAll" resultType="com.zjx.multiple.data.sources.atomikos.domain.db2.TrafficArea">
+                select * from Traffic_Area
+    </select>
+</mapper>

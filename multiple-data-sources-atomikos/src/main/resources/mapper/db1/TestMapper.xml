@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zjx.multiple.data.sources.atomikos.mapper.db1.TestMapper">
+  <resultMap id="BaseResultMap" type="com.zjx.multiple.data.sources.atomikos.domain.db1.Test">
+    <result column="myd" jdbcType="VARCHAR" property="myd" />
+    <result column="jd" jdbcType="VARCHAR" property="jd" />
+    <result column="ck" jdbcType="VARCHAR" property="ck" />
+    <result column="nf" jdbcType="VARCHAR" property="nf" />
+  </resultMap>
+
+  <select id="findTestAll" resultType="com.zjx.multiple.data.sources.atomikos.domain.db1.Test">
+     select * from test
+  </select>
+</mapper>
