@@ -16,6 +16,7 @@
 
     <modules>
         <module>multiple-data-sources-atomikos</module>
+        <module>multiple-data-sources-annotation</module>
     </modules>
 
     <properties>
