@@ -17,6 +17,7 @@
     <modules>
         <module>multiple-data-sources-atomikos</module>
         <module>multiple-data-sources-annotation</module>
+        <module>multiple-data-sources-seata</module>
     </modules>
 
     <properties>
@@ -41,6 +42,7 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
+
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
